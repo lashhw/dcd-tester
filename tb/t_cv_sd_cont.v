@@ -1,11 +1,11 @@
 `timescale 1ns / 1ns
-module t_cv_st_func;
+module t_cv_sd_cont;
     reg X;
     reg Clk;
     reg Rst;
     wire Z;
     
-    Lab3_Converter_structure M1(X, Clk, Rst, Z);
+    Lab3_Converter_state_diagram M1(X, Clk, Rst, Z);
 
     initial begin
         Clk = 1;
@@ -16,7 +16,7 @@ module t_cv_st_func;
     reg [3:0] Excess3;
     reg [3:0] BCD;
     initial begin
-        // $dumpfile("t_cv_st_func.vcd");
+        // $dumpfile("t_cv_sd_cont.vcd");
         // $dumpvars;
         @(negedge Clk);
         Rst = 1'b0;

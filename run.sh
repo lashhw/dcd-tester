@@ -29,9 +29,9 @@ for dir in *; do (
         iverilog "${TB_DIR}/t_dl_rand.v" "${DL_GL}" && ./a.out > "t_dl_rand.txt"
         iverilog "${TB_DIR}/t_df_spec.v" "${DL_GL}" "${DF_GL}" && ./a.out > "t_df_spec.txt"
         iverilog "${TB_DIR}/t_df_rand.v" "${DL_GL}" "${DF_GL}" && ./a.out > "t_df_rand.txt"
-        iverilog "${TB_DIR}/t_cv_sd_func.v" "${CV_SD}" && ./a.out > "t_cv_sd_func.txt"
+        iverilog "${TB_DIR}/t_cv_sd_cont.v" "${CV_SD}" && ./a.out > "t_cv_sd_cont.txt"
         iverilog "${TB_DIR}/t_cv_sd_rst.v" "${CV_SD}" && ./a.out > "t_cv_sd_rst.txt"
-        iverilog "${TB_DIR}/t_cv_st_func.v" "${CV_ST}" "${DF_AR}" && ./a.out > "t_cv_st_func.txt"
+        iverilog "${TB_DIR}/t_cv_st_cont.v" "${CV_ST}" "${DF_AR}" && ./a.out > "t_cv_st_cont.txt"
         iverilog "${TB_DIR}/t_cv_st_rst.v" "${CV_ST}" "${DF_AR}" && ./a.out > "t_cv_st_rst.txt"
         iverilog "${TB_DIR}/t_cv_st_arst.v" "${CV_ST}" "${DF_AR}" && ./a.out > "t_cv_st_arst.txt"
         rm -f a.out dl df cv
