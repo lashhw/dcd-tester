@@ -14,8 +14,8 @@ module t_dl_rand;
     initial begin
         // $dumpfile("t_dl_rand.vcd");
         // $dumpvars;
-        D = 0;
-        E = 0;
+        D = 1'b0;
+        E = 1'b0;
         #10000 $finish;
     end
 endmodule
