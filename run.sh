@@ -23,7 +23,7 @@ for dir in *; do (
     echo "testing [${dir}]"
     {   
         echo "=====[${dir}]====="
-        rm -f *.txt *.vcd
+        rm -f -- *.txt *.vcd
         echo "(TA's testbench)"
         iverilog "${TB_DIR}/t_dl_spec.v" "${DL_GL}" && ./a.out > "t_dl_spec.txt"
         iverilog "${TB_DIR}/t_dl_rand.v" "${DL_GL}" && ./a.out > "t_dl_rand.txt"
