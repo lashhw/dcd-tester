@@ -28,8 +28,8 @@ module t_cv_st_rst;
     reg [3:0] Excess3;
     reg [3:0] BCD;
     initial begin
-        $dumpfile("t_cv_st_rst.vcd");
-        $dumpvars;
+        // $dumpfile("t_cv_st_rst.vcd");
+        // $dumpvars;
         digit = 0;
         count = 0;
         invalid = 1'b1;

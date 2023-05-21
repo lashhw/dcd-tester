@@ -16,8 +16,8 @@ module t_df_rand;
     end
 
     initial begin
-        $dumpfile("t_df_rand.vcd");
-        $dumpvars;
+        // $dumpfile("t_df_rand.vcd");
+        // $dumpvars;
         D = 0;
         #10000 $finish;
     end

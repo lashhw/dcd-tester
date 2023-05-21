@@ -12,8 +12,8 @@ module t_dl_rand;
     always #({$random} % 30) E = ~E;
 
     initial begin
-        $dumpfile("t_dl_rand.vcd");
-        $dumpvars;
+        // $dumpfile("t_dl_rand.vcd");
+        // $dumpvars;
         D = 0;
         E = 0;
         #10000 $finish;

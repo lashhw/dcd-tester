@@ -16,8 +16,8 @@ module t_cv_st_func;
     reg [3:0] Excess3;
     reg [3:0] BCD;
     initial begin
-        $dumpfile("t_cv_st_func.vcd");
-        $dumpvars;
+        // $dumpfile("t_cv_st_func.vcd");
+        // $dumpvars;
         @(negedge Clk);
         Rst = 1'b0;
         @(posedge Clk);

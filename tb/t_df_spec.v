@@ -15,8 +15,8 @@ module t_df_spec;
     end
 
     initial begin
-        $dumpfile("t_df_spec.vcd");
-        $dumpvars;
+        // $dumpfile("t_df_spec.vcd");
+        // $dumpvars;
     end
     
     initial fork

@@ -10,8 +10,8 @@ module t_dl_spec;
     always #1 $display(D, E, Q, Qb);
 
     initial begin
-        $dumpfile("t_dl_spec.vcd");
-        $dumpvars;
+        // $dumpfile("t_dl_spec.vcd");
+        // $dumpvars;
     end
     
     initial fork
