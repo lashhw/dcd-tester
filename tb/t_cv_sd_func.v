@@ -18,6 +18,7 @@ module t_cv_sd_func;
     initial begin
         $dumpfile("t_cv_sd_func.vcd");
         $dumpvars;
+        @(negedge Clk);
         Rst = 1'b0;
         @(posedge Clk);
         repeat (10000) begin
