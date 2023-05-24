@@ -49,7 +49,7 @@ module t_cv_st_arst;
                     if (Excess3 < 3 || Excess3 > 12)
                         invalid = 1'b1;
                     if (~invalid) begin
-                        $display("%t: %b -> %b", $time, Excess3, BCD);
+                        $strobe("%t: %b -> %b", $time, Excess3, BCD);
                         count = count + 1;
                     end
                 end

@@ -7,7 +7,7 @@ module t_dl_rand;
 
     Lab3_D_Latch_gatelevel M1(D, E, Q, Qb);
 
-    always #1 $display(D, E, Q, Qb);
+    always #1 $strobe(D, E, Q, Qb);
     always #({$random} % 30) D = ~D;
     always #({$random} % 30) E = ~E;
 

@@ -7,7 +7,7 @@ module t_dl_spec;
 
     Lab3_D_Latch_gatelevel M1(D, E, Q, Qb);
 
-    always #1 $display(D, E, Q, Qb);
+    always #1 $strobe(D, E, Q, Qb);
 
     initial begin
         // $dumpfile("t_dl_spec.vcd");

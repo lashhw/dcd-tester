@@ -31,7 +31,7 @@ module t_cv_st_cont;
                 BCD[digit] = Z;
                 @(posedge Clk);
             end
-            $display("%b -> %b", Excess3, BCD);
+            $strobe("%b -> %b", Excess3, BCD);
         end
         $finish;
     end

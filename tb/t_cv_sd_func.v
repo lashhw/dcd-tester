@@ -32,7 +32,7 @@ module t_cv_sd_func;
                 BCD[digit] = Z;
                 @(posedge Clk);
             end
-            $display("%b -> %b", Excess3, BCD);
+            $strobe("%b -> %b", Excess3, BCD);
         end
         $finish;
     end

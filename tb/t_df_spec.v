@@ -7,7 +7,7 @@ module t_df_spec;
 
     Lab3_D_FF_gatelevel M1(D, Clk, Q, Qb);
 
-    always #1 $display(D, Clk, Q, Qb);
+    always #1 $strobe(D, Clk, Q, Qb);
 
     initial begin
         Clk = 0;
