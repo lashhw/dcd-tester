@@ -9,7 +9,7 @@ for dir in *; do (
     {
         cd "${dir}" || exit 1
         echo "=====[${dir}]====="
-        unzip *.zip
+        unzip -- *.zip
         echo ""
     } >> "${LOG}" 2>&1 
 ) done
