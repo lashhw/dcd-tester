@@ -1,0 +1,13 @@
+=====[ta]=====
+t_cv_sd_cont.txt: 10000/10000 (correct)
+t_cv_sd_func.txt: 10/10 (correct)
+t_cv_sd_rst.txt: 10000/10000 (correct)
+t_cv_st_arst.txt: 10000/10000 (correct)
+t_cv_st_cont.txt: 10000/10000 (correct)
+t_cv_st_func.txt: 10/10 (correct)
+t_cv_st_rst.txt: 10000/10000 (correct)
+t_df_rand.txt: 10000/10000 (correct)
+t_df_spec.txt: 100/100 (correct)
+t_dl_rand.txt: 10000/10000 (correct)
+t_dl_spec.txt: 100/100 (correct)
+
