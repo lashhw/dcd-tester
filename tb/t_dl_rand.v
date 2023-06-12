@@ -5,7 +5,7 @@ module t_dl_rand;
     wire Q;
     wire Qb;
 
-    Lab3_D_Latch_gatelevel M1(D, E, Q, Qb);
+    Lab3_D_Latch_gatelevel M1(.D(D), .E(E), .Q(Q), .Qb(Qb));
 
     always #1 $strobe(D, E, Q, Qb);
     always #({$random} % 30) D = ~D;

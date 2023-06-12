@@ -5,7 +5,7 @@ module t_df_spec;
     wire Q;
     wire Qb;
 
-    Lab3_D_FF_gatelevel M1(D, Clk, Q, Qb);
+    Lab3_D_FF_gatelevel M1(.D(D), .Clk(Clk), .Q(Q), .Qb(Qb));
 
     always #1 $strobe(D, Clk, Q, Qb);
 

@@ -5,7 +5,7 @@ module t_cv_sd_func;
     reg Rst;
     wire Z;
     
-    Lab3_Converter_state_diagram M1(X, Clk, Rst, Z);
+    Lab3_Converter_state_diagram M1(.X(X), .Clk(Clk), .Rst(Rst), .Z(Z));
 
     initial begin
         Clk = 1;

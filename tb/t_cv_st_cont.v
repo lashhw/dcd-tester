@@ -5,7 +5,7 @@ module t_cv_st_cont;
     reg Rst;
     wire Z;
     
-    Lab3_Converter_structure M1(X, Clk, Rst, Z);
+    Lab3_Converter_structure M1(.X(X), .Clk(Clk), .Rst(Rst), .Z(Z));
 
     initial begin
         Clk = 1;
